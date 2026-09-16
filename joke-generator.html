@@ -38,7 +38,6 @@
   <script>
     const jokeBox = document.getElementById('joke');
     const button = document.getElementById('new-joke');
-
     async function getJoke() {
       jokeBox.className = 'joke-box loading';
       jokeBox.textContent = 'Finding a good one...';
@@ -56,7 +55,6 @@
         button.disabled = false;
       }
     }
-
     button.addEventListener('click', getJoke);
   </script>
 </body>
